@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Z-index, Position, Relative Unit: px,%,em,rem,vh,vw, Display Property
+    </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+      }
+      /* .box {
+        background-color: olivedrab;
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        display: inline-block;
+      } */
+      /* #first {
+        background-color: red;
+        height: 100px;
+        width: 200px;
+        font-size: 10px;
+      }
+      #second {
+        background-color: royalblue;
+        width: 50%;
+        font-size: 2.5rem;
+        font-size: 2.5em;
+      } */
+      /* #first {
+        background-color: lightblue;
+        width: 50vw;
+        height: 60vw;
+      } */
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: seagreen;
+        margin: 5px;
+      }
+      #box1 {
+        position: static;
+      }
+      #box2 {
+        position: relative;
+        top: 10px;
+        left: 50px;
+      }
+      #box3 {
+        position: absolute;
+        top: 20px;
+      }
+      #box4 {
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="box1" class="box">Box1</div>
+    <div id="box2" class="box">Box2</div> -->
+    <!-- Body
+    <div id="first">
+      First Div
+      <div id="second">Second Div</div>
+    </div> -->
+    <!-- <div id="first">First Div</div> -->
+    <div id="box1" class="box">Box1</div>
+    <div id="box2" class="box">Box2</div>
+    <div id="box3" class="box">Box3</div>
+    <div id="box4" class="box">Box4</div>
+  </body>
+</html>

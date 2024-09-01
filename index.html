@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flex box, Float</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+    /* .container {
+      background-color: antiquewhite;
+      border: 2px solid;
+      height: 100px;
+    }
+    .box {
+      height: 50px;
+      width: 50px;
+      border: 2px solid;
+      margin: 5px;
+      background-color: aqua;
+    }
+    #box2 {
+      float: right;
+    } */
+    #container {
+      margin: 2px;
+      padding: 2px;
+      height: 500px;
+      background-color: black;
+      border: 2px solid yellow;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* flex-wrap: wrap; */
+      align-items: start;
+      /* align-content: center; */
+    }
+    .box {
+      margin: 6px;
+      background-color: white;
+      height: 190px;
+      width: 150px;
+      border: 2px solid;
+    }
+    #box3 {
+      /* align-self: center; */
+      /* flex-shrink: 5; */
+      /* flex-grow: 1; */
+      order: 1;
+    }
+  </style>
+  <body>
+    <!-- <div class="container">
+      <div class="box" id="box1">Box1</div>
+      <div class="box" id="box2">Box2</div>
+    </div> -->
+    <div id="container">
+      <div id="box1" class="box">box1</div>
+      <div id="box2" class="box">box2</div>
+      <div id="box3" class="box">box3</div>
+      <div id="box4" class="box">box4</div>
+      <div id="box5" class="box">box5</div>
+      <div id="box6" class="box">box6</div>
+      <div id="box7" class="box">box7</div>
+    </div>
+  </body>
+</html>

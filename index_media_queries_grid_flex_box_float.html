@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Flex box, Float</title>
+    <title>Media Queries, Grid, Flex box, Float</title>
   </head>
   <style>
     * {
-      margin: 0;
-      padding: 0;
-      background-color: black;
+      margin: 2px;
+      padding: 2px;
     }
     /* .container {
       background-color: antiquewhite;
@@ -24,7 +23,7 @@
     #box2 {
       float: right;
     } */
-    #container {
+    /* #container {
       margin: 2px;
       padding: 2px;
       height: 500px;
@@ -33,22 +32,45 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      /* flex-wrap: wrap; */
+      flex-wrap: wrap;
       align-items: start;
-      /* align-content: center; */
-    }
-    .box {
+      align-content: center;
+    } */
+    /* .box {
       margin: 6px;
       background-color: white;
       height: 190px;
       width: 150px;
       border: 2px solid;
+    } */
+    /* #box3 { */
+    /* align-self: center; */
+    /* flex-shrink: 5; */
+    /* flex-grow: 1; */
+    /* order: 1;
+    } */
+
+    /* .container {
+      border: 2px black solid;
+      display: grid;
+      grid-template-columns: 80px 100px;
+      grid-template-rows: 50px 100px;
     }
-    #box3 {
-      /* align-self: center; */
-      /* flex-shrink: 5; */
-      /* flex-grow: 1; */
-      order: 1;
+    .box {
+      background-color: brown;
+      border: 2px black solid;
+    } */
+
+    .box {
+      height: 100px;
+      width: 100px;
+      background-color: aqua;
+      padding: 5px;
+    }
+    @media screen and (min-width: 300px) and (max-width: 500px) {
+      .box {
+        background-color: black;
+      }
     }
   </style>
   <body>
@@ -56,7 +78,7 @@
       <div class="box" id="box1">Box1</div>
       <div class="box" id="box2">Box2</div>
     </div> -->
-    <div id="container">
+    <!-- <div id="container">
       <div id="box1" class="box">box1</div>
       <div id="box2" class="box">box2</div>
       <div id="box3" class="box">box3</div>
@@ -64,6 +86,13 @@
       <div id="box5" class="box">box5</div>
       <div id="box6" class="box">box6</div>
       <div id="box7" class="box">box7</div>
-    </div>
+    </div> -->
+    <!-- <div class="container">
+      <div class="box" id="box1">Grid Box 1</div>
+      <div class="box" id="box2">Grid Box 2</div>
+      <div class="box" id="box3">Grid Box 3</div>
+      <div class="box" id="box4">Grid Box 4</div>
+    </div> -->
+    <div class="box">Box</div>
   </body>
 </html>
